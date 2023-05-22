@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --cor1: #004fe2;
+    --cor2: #87b9f1;
+    --cor3: #fce940;
+    --cor4: linear-gradient(to right, #87b9f1, #004fe2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-image: var(--cor4);
+    text-align: center;
+    /* padding-top: 30px; */
+}
+
+/* #main-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#task_container {
+    background-color: #d8da70;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: .3rem .3rem .5rem rgba(0, 0, 0, 0.336);
+} */
+
+#task_container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* task form */
+
+#task_header {
+    margin-top: 40px;
+}
+
+#add_task_form {
+    position: relative;
+}
+
+#add_task_form input {
+    box-sizing: border-box;
+    border: 1px solid var(--cor1);
+    background: #fff;
+    color: var(--cor1);
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#add_task_form input::placeholder {
+    color: var(--cor1);
+}
+
+#add_task_form input:focus {
+    outline: none;
+}
+
+#add_btn {
+    position: absolute;
+    background: #fff;
+    border: 1px solid var(--cor1);
+    cursor: pointer;
+    width: 60px;
+    height: 52.5px;
+    right: 0;
+    top: 0;
+    padding: 0px;
+}
+
+#add_btn:hover {
+    background-color: var(--cor3);
+    transition: .3s;
+}
+
+.fa-plus {
+    font-size: 25px;
+}
+
+/*  tasks container */
+
+#task_list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ /* tasks container */ 
+
+#task_list li {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid var(--cor1);
+    background-color: #fff;
+    color: var(--cor1);
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#task_list li span {
+    font-size: 18px;
+}
+
+#add_btn2 {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 52.5px;
+    right: 0;
+    top: 0;
+    padding: 0px;
+}
+
+#task_list i {
+    position: absolute;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 25px;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#done-btn {
+    right:50px;
+}
+
+#done-btn:hover {
+    color: #fff;
+    background-color: green;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#remove-btn {
+    right: 0px;
+}
+
+#remove-btn:hover {
+    color: #fff;
+    background-color: red;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+#task_list li.done {
+    background-color: var(--cor1);
+    color: #fff;
+    text-decoration: line-through;
+}
