@@ -105,6 +105,7 @@ body {
     line-height: 50px;
     position: relative;
     border-bottom: 3px solid var(--cor1);
+    border-radius: 5px;
     background-color: #fff;
     color: var(--cor1);
     margin-bottom: 10px;
@@ -138,11 +139,11 @@ body {
     margin: 5px;
 }
 
-#done-btn {
+#done_btn {
     right:50px;
 }
 
-#done-btn:hover {
+#done_btn:hover {
     color: #fff;
     background-color: green;
     padding: 10px;
@@ -150,11 +151,11 @@ body {
     border-radius: 5px;
 }
 
-#remove-btn {
+#remove_btn {
     right: 0px;
 }
 
-#remove-btn:hover {
+#remove_btn:hover {
     color: #fff;
     background-color: red;
     padding: 10px;

@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/script.js"></script>
+
     
     <title>To Do list</title>
 </head>
 <body>
-
-<section id="main-container">
     
+<!-- <section class="main-container"></section> -->
+
         <div id="task_container">
     
             <div id="task_header">
@@ -24,7 +24,7 @@
     
                 <form action="" id="add_task_form">
     
-                    <input type="text" id="task_title" placeholder="O que você ai fazer?">
+                    <input type="text" id="task_title" maxlength="33" placeholder="O que você ai fazer?">
                     <button id="add_btn" type="submit">
                         <i class="fa-solid fa-plus"></i>
                     </button>
@@ -38,24 +38,10 @@
     
                 <ul id="task_list">
 
-                    <li class="task-box">
+                    <li class="task-box template hide">
                         <span class="task-title"> teste1</span>
-                        <i id="done-btn" class="fa-solid fa-check"></i>
-                        <i id="remove-btn" class="fa-solid fa-xmark"></i>
-                    </li>
-                
-               
-                    <li class="task-box">
-                        <span class="task-title">teste1</span>
-                        <i id="done-btn" class="fa-solid fa-check"></i>
-                        <i id="remove-btn" class="fa-solid fa-xmark"></i>
-                    </li>
-                
-                
-                    <li class="task-box">
-                        <span class="task-title">teste1</span>
-                        <i id="done-btn" class="fa-solid fa-check"></i>
-                        <i id="remove-btn" class="fa-solid fa-xmark"></i>
+                        <i id="done_btn" class="fa-solid fa-check"></i>
+                        <i id="remove_btn" class="fa-solid fa-xmark"></i>
                     </li>
 
                 </ul>
@@ -64,7 +50,7 @@
     
         </div>
 
-</section>
+    <script src="scripts/script.js"></script>
 
 </body>
 </html>
