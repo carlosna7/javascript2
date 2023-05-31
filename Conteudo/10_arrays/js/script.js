@@ -1,18 +1,33 @@
-var arr = [5, "carlos", true, {teste: 1, teste: 2}]; // Objeto => {}
+const arr = [5, "carlos", true, {teste: 1, teste: 2}]; // Objeto => {}
 
 console.log(arr);
 
-var arr2 = [2,3,4,5,6];
+// ----------------------------------------------------
+
+const arr2 = [2,3,4,5,6];
 
 console.log(arr2);
 
-console.log(arr[0]);
-console.log(arr[1]);
-console.log(arr[2]);
-console.log(arr[3]);
+// ----------------------------------------------------
 
-arr[4] = 10;
-arr[0] = "Cinco";
+const arr3 = [5, "carlos", true, ["teste: 1", "teste: 2"]]; // Objeto => {}
 
+console.log(arr3[0]);
+console.log(arr3[1]);
+console.log(arr3[2]);
+console.log(arr3[3]);
 
-console.log(arr);
+arr3[4] = 10;
+arr3[0] = "Cinco";
+
+// ----------------------------------------------------
+
+const arrEsparso = [1,,,3]
+
+arrEsparso[10] = 10
+
+// ----------------------------------------------------
+
+delete arrEsparso [0]
+
+console.log(arrEsparso);
