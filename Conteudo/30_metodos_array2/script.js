@@ -1,12 +1,13 @@
 // splice
 
-var arr = [1,2,3,4,5,5,5,5];
+var arr = [1,2,3,4,5,5];
 
-arr.splice(2, 0 , 999);
+arr.splice(2, 0 ,333);
+arr.splice(3, 0 ,444);
 
 console.log(arr);
 
-arr.splice(3, 1);
+arr.splice(4, 2);
 
 console.log(arr);
 
@@ -25,3 +26,11 @@ console.log(arr2.join(", "));
 // reverse
 
 console.log(arr2.reverse());
+
+// 
+
+const arrOrd = [2, 3, 1, 4, 5]
+
+arrOrd.sort()
+
+console.log(arrOrd )
