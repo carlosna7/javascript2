@@ -22,24 +22,39 @@
 
 // multiplicacao (2, 4, exibir);
 
-function exibir(op, resultado) {
-    console.log("A operação " + op + " resultou em " + resultado);
-}
+//-----------------------------------------------------
 
-function realizarOperacao(a, b, op, callback) {
-    var resultado;
+// function exibir(op, resultado) {
+//     console.log("A operação " + op + " resultou em " + resultado);
+// }
 
-    if (op === "soma") {
-        resultado = a + b;
-    } else if (op === "multiplicacao") {
-        resultado = a * b;
-    } else if (op === "subtracao") {
-        resultado = a - b;
-    }
+// function realizarOperacao(a, b, op, callback) {
+//     var resultado;
 
-    callback(op, resultado);
-}
+//     if (op === "soma") {
+//         resultado = a + b;
+//     } else if (op === "multiplicacao") {
+//         resultado = a * b;
+//     } else if (op === "subtracao") {
+//         resultado = a - b;
+//     }
 
-realizarOperacao(5, 3, "soma", exibir);
-realizarOperacao(5, 3, "multiplicacao", exibir);
-realizarOperacao(5, 3, "subtracao", exibir);
+//     callback(op, resultado);
+// }
+
+// realizarOperacao(5, 3, "soma", exibir);
+// realizarOperacao(5, 3, "multiplicacao", exibir);
+// realizarOperacao(5, 3, "subtracao", exibir);
+
+//-----------------------------------------------------
+
+const saudacao = (nome) => {
+    console.log("Olá, " + nome);
+};
+  
+const realizarOp = (callback) => {
+    const nome = "Carlos";
+    callback(nome);
+};
+  
+realizarOp(saudacao);
