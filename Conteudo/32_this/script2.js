@@ -12,7 +12,9 @@ console.log(obj.f())
 
 // declarações incorretas
 
-// const arrowFunctionThis = () => { console.log(this)}
+// const arrowFunctionThis = () => { 
+//     console.log(this)
+// }
 
 // const arrowFunctionThis = {
 //     prop: 300,
